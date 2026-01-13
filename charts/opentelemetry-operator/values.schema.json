@@ -1384,6 +1384,14 @@
               "examples": [
                 "v0.15.0"
               ]
+            },
+            "imagePullPolicy": {
+              "type": "string",
+              "default": "IfNotPresent",
+              "title": "The imagePullPolicy Schema",
+              "examples": [
+                "IfNotPresent"
+              ]
             }
           },
           "examples": [

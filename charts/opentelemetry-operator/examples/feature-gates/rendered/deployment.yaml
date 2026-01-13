@@ -95,6 +95,7 @@ spec:
             - --v=0
           image: "quay.io/brancz/kube-rbac-proxy:v0.20.0"
           name: kube-rbac-proxy
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8443
               name: https

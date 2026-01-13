@@ -161,6 +161,7 @@ spec:
             {{-  end  }}
           image: "{{ .Values.kubeRBACProxy.image.repository }}:{{ .Values.kubeRBACProxy.image.tag }}"
           name: kube-rbac-proxy
+          imagePullPolicy: {{ .Values.kubeRBACProxy.image.imagePullPolicy }}
           ports:
             - containerPort: {{ .Values.kubeRBACProxy.ports.proxyPort }}
               name: https
